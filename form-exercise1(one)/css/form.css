@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+
+/* form styling */
+
+
+label 
+{
+margin-right: .3em;
+width: 5.3em;
+display: inline-block;
+text-align: right;
+}
+
+
+#formcol1 li 
+{
+	list-style:none;
+}
+
+#wrapper {
+	width: 60%;
+	margin-left:4%;
+}
+
+div#formcol1 {
+	float:left;	
+	width: 100%;
+}
+
+
+
+#TypeofPres_lec
+{
+	margin-right: 0;
+}
+#TypeofPres_lab
+{
+	margin-right: 0;
+}
+
+legend
+{
+	background-color: #595959;
+	color: white;
+}
+
+
+select:focus, select:active, input:focus, input:active, input:focus + label, input:active + label, label[for]:focus, label[for]:active 
+{
+color: #000000 !important;
+background-color: #01D72F !important;
+}
+
+#formcol1 input.reqfield 
+
+{
+	background: #FF9;
+}
+
+
+fieldset input[type=radio] + label  /*Got helped from: https://nation.marketo.com/t5/product-discussions/horizontal-radio-buttons/m-p/101116#M62811; */
+{ 
+	display: inline !important; 
+	margin-right:1.5em !important; 
+	margin-left: 0 !important;
+
+}
+
+
+/* end of form css */
+	
