@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../hw4"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"iostream": "cpp",
+			"ostream": "cpp"
+		}
+	}
+}
