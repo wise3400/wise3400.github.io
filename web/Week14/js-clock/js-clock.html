@@ -1,0 +1,120 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<style>
+		div
+		{
+			font-size: 50px;
+			text-align: center;
+			border: 5px solid blue;
+		}
+
+		/* https://coder-coder.com/how-to-center-button-with-html-css/  */
+	
+		.toCenter
+		{
+			justify-content: center;
+		}
+		button
+		{
+			font-size:55px;
+		}
+		audio
+		{
+			 display: block;
+			 margin-left: auto;
+			 margin-right: auto;
+		}
+		img
+		{
+			display:block;
+			margin-left: auto;
+			margin-right:auto;
+			width: 85%;
+		}
+		h2
+		{
+			margin:auto;
+			text-align: center;
+		}
+
+
+	</style>
+
+	<title>
+		Clock 
+	</title>
+
+</head>
+
+<body>
+	
+
+<div id="wrapper">
+
+	<div id="timer">
+		<h2> 
+			Time:
+		</h2>
+		<span id="hour">11</span>
+		:
+		<span id="minute">59</span>
+		:
+		<span id="second">59</span>
+		<span id="meridiem">pm</span>
+
+	</div>
+
+	<div id="calendar">
+		<h2> Today's Date: </h2>
+		<span id="day">Monday</span>
+		, 
+		<span id="month">Dec</span>
+		<span id="date">31</span>
+		<span id="year">1999</span>
+
+	</div>
+
+</div>
+		
+<div class = "justSomeButtons toCenter">
+
+<h2>
+	Choose Regular Or Military Time: 
+</h2>
+
+
+<button onclick="toggleTwelve()">Regular Time </button> <br>
+<button onclick="militaryTime()">Military Time </button> <br>
+</div>
+
+<br>
+<audio controls autoplay loop>
+		<source src="media/clock.mp3" type="audio/mp3">
+		 <p>
+			Your browser does not support HTML 5 audio.
+		 </p>
+						
+</audio> 
+
+<h2>3 Picture Slideshow Every 1 Second </h2>
+
+<img src = "nature.jpg" alt = "nature pics" id="pictures">
+
+
+<script src="js/clock.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+

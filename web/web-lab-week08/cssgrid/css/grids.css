@@ -1,0 +1,110 @@
+#container3{
+	width:100%; /*The container will try to fill the entire browser window width*/
+	max-width:1500px; /*the maximum width the container will grow to*/
+	height:1200px;
+	margin:0px auto; /*This line of code is the key.  0px margin top and bottom, auto margin left and right to center*/
+	background-color:rgb(150,150,150);
+	padding:0px;
+	box-sizing:border-box;/*Makes it so that padding does not add to a box's total width*/
+
+  	display: grid;
+  	grid-template-columns: repeat(12,8.333%);
+  	grid-template-rows: 8% 11% 50%;
+}
+
+header{
+	background-color:rgb(200,200,200);
+	margin:10px;
+	padding:20px;
+	box-sizing:border-box;
+	text-align:center; /*left, right, center, justify*/
+	grid-area: 1 / 1 / 2 / 15; /*row start, column start, row end, column end*/
+}
+nav{
+	background-color:rgb(200,200,200);
+	margin:10px;
+	box-sizing:border-box;
+	text-align:center; /*left, right, center, justify*/
+	grid-area: 2 / 5 / 2 / 9; /*row start, column start, row end, column end*/
+}
+
+article{
+	background-color:rgb(200,200,200);
+	margin:10px;
+	box-sizing:border-box;
+	text-align:center; /*left, right, center, justify*/
+	grid-area: 3 / 2 / 5 / 12; /*row start, column start, row end, column end*/
+
+	display: grid;
+  	grid-template-columns: 25% 25% 25% 25%;
+  	grid-template-rows: 15% 35% 50%;
+}
+
+.articlefull1{
+	background-color:rgb(180,180,180);
+	margin:10px;
+	padding:20px;
+	box-sizing:border-box;
+	text-align:center; /*left, right, center, justify*/
+	grid-area:1/2/2/9;
+	grid-column-end: span 2;
+
+}
+.articlefull2{
+	background-color:rgb(180,180,180);
+	margin:10px;
+	padding:20px;
+	box-sizing:border-box;
+	text-align:center; /*left, right, center, justify*/
+	grid-column-end: span 7;
+	
+
+}
+.articlehalf{
+	background-color:rgb(180,180,180);
+	margin:10px;
+	padding:20px;
+	box-sizing:border-box;
+	text-align:center; /*left, right, center, justify*/
+	grid-column-end: span 2;
+}
+.articlequarter{
+	background-color:rgb(180,180,180);
+	margin:10px;
+	padding:20px;
+	box-sizing:border-box;
+	text-align:center; /*left, right, center, justify*/
+	grid-row-start: 2;
+	grid-column-end: span 1;
+
+}
+.articlequarter2{
+	background-color:rgb(180,180,180);
+	margin:10px;
+	padding:20px;
+	box-sizing:border-box;
+	text-align:center; /*left, right, center, justify*/
+	grid-area: 3 / 2 / 3 / 2; /*row start, column start, row end, column end*/
+	
+
+}
+.articlequarter3{
+	background-color:rgb(180,180,180);
+	margin:10px;
+	padding:20px;
+	box-sizing:border-box;
+	text-align:center; /*left, right, center, justify*/
+	grid-area: 3 / 3 / 3 / 1;
+	grid-row-start: 3;
+	grid-column-end: span 1;
+
+}
+
+footer{
+	background-color:rgb(200,200,200);
+	margin:10px;
+	box-sizing:border-box;
+	text-align:center; /*left, right, center, justify*/
+	grid-area: 6 / 2 / 9 / 12; /*row start, column start, row end, column end*/
+}
+
