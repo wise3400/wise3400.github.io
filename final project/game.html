@@ -1,0 +1,86 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<link href="css/game.css" rel="stylesheet" type="text/css">
+
+<title>Rock,Paper,Scissors VS. The Computer</title>
+
+</head>
+
+<body>
+
+<h1><b>Rock,Paper,Scissors VS. The Computer</b></h1>
+<img src = "img/logo.jpg" alt="logo">
+
+<br>
+<br>
+<br>
+
+<!-- choice between a rock, paper, or scissors. -->
+
+        <h1>Let's Choose a choice! Select below to do so.</h1>
+        <h1>You must score above a 6 in order to win! </h1>
+        <h1>Score greater than or 4 to use a gun! +1 point.</h1>
+        <h1>Score greater than or 3 to use a car! +1 point.</h1>
+        <h1>If score is less than 4, -1 point for choosing a gun.</h1>
+        <h1>If score is less than 3, -1 point for choosing a car.</h1>
+        
+
+        <p id = "userScore">
+            <b>User Score: 0</b> <br>
+            <br>
+            <b>Computer Score: 0</b> <br>
+        <p>
+
+        <p id = "computerScore">
+        <p>
+
+    	<select id="userchoice">
+    		<option selected value="0">Select a choice.</option>
+        	<option value="rock">1. Rock</option>
+        	<option value="paper">2. Paper</option>
+			<option value="scissors">3. Scissors</option>
+            <option value="gun">4. Gun</option>
+            <option value="car">5. Car</option>
+        </select>
+
+		<br>       
+<br>
+
+<input type="button" value="SHOOT!" onClick="run()"><br>
+
+
+<!-- How to create an html button that acts like a link-->
+<!-- https://stackoverflow.com/questions/2906582/how-to-create-an-html-button-that-acts-like-a-link  --> 
+    <form method="get" action="game.html">
+        <button type="submit">PLAY AGAIN!</button>
+     </form>
+
+
+
+<br>
+
+<h1>You:</h1>
+<p id="userPics">
+<img src = "img/you.jpg" alt="you logo">
+<p>
+
+<h1>Computer:</h1>
+<p id = "computerPics">
+<img src = "img/computer.jpg" alt="computer logo">
+<p>
+
+
+<p id = "computer">
+<p>
+
+	
+
+<script src="js/quiz.js" ></script>
+
+</body>
+</html>
