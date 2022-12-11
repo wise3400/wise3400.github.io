@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html lang="en">
+
+<title>
+	Contact Me!
+</title>
+
+<meta charset="utf-8">
+
+<link href="css/contact.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+	<!-- Contact Me Image is from Google: just search Google-->
+	<header>
+		<img src = "contact-me.jpg" alt = "contact me pic">
+	</header>
+
+	<nav>
+			<ul>
+				<li>
+					<!-- How to create an html button that acts like a link-->
+					<!-- https://stackoverflow.com/questions/2906582/how-to-create-an-html-button-that-acts-like-a-link  --> 
+					<form method="get" action="index.html">
+				    <button type="submit"><b>Home</b></button>
+					</form>
+				</li>
+				<li>
+					<form method="get" action="bio.html">
+				    <button type="submit"><b>About</b></button>
+					</form>
+				</li>
+				<li>
+					<form method="get" action="goals.html">
+				    <button type="submit"><b>Goals </b></button>
+					</form>
+				</li>
+				<li>
+					<form method="get" action="resume.html">
+				    <button type="submit"><b>Resume</b></button>
+					</form>
+				</li>
+
+				<li>
+					<form method="get" action="contact.html">
+				    <button type="submit"><b>Contact</b></button>
+					</form>
+				</li>
+			</ul>
+		</nav>
+
+	<div id=container>
+	
+	<!-- Code/Modified by me: https://www.w3schools.com/howto/howto_css_contact_form.asp-->
+	<form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+
+    <label for="subject">Send Me A Message</label>
+    <textarea id="subject" name="subject" placeholder="Type Here..." style="height:200px"></textarea>
+
+ 	<input type="submit" value="Submit">
+
+  </form>
+
+
+		<footer>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+			<b> ©2021. Wilson Seet.  All Rights Reserved.</b> <br>
+			<b> wise3400@colorado.edu</b> <br>
+		</footer>
+
+	</div>
+
+</body>
+
+</html>
